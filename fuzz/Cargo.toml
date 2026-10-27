@@ -1,0 +1,20 @@
+[package]
+name = "plaid-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2024"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+plaid-core = { path = "../crates/plaid-core" }
+plaid-demux = { path = "../crates/plaid-demux" }
+
+[[bin]]
+name = "mkv_demux"
+path = "fuzz_targets/mkv_demux.rs"
+test = false
+doc = false
+bench = false

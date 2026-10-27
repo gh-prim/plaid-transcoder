@@ -1,0 +1,14 @@
+[package]
+name = "plaid-demux"
+description = "Memory-safe demuxers for plaid (Matroska/WebM first)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+plaid-core.workspace = true
+miniz_oxide.workspace = true
+
+[lints]
+workspace = true

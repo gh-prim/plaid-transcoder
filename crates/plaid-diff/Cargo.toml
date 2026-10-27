@@ -1,0 +1,16 @@
+[package]
+name = "plaid-diff"
+description = "Differential test harness: plaid demuxers vs ffprobe"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+plaid-core.workspace = true
+plaid-demux.workspace = true
+serde_json.workspace = true
+md-5.workspace = true
+
+[lints]
+workspace = true

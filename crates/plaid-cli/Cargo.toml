@@ -1,0 +1,19 @@
+[package]
+name = "plaid-cli"
+description = "Command-line front end for plaid"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "plaid"
+path = "src/main.rs"
+
+[dependencies]
+plaid-core.workspace = true
+plaid-demux.workspace = true
+serde_json.workspace = true
+
+[lints]
+workspace = true

@@ -1,0 +1,10 @@
+[package]
+name = "plaid-core"
+description = "Shared types for plaid: packets, streams, timestamps, errors"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
